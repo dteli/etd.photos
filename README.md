@@ -1,24 +1,14 @@
 # etd.photos
 
-## Project setup
-```
-npm install
-```
+I wanted to learn Vue.js and this was an available domain name.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Eventually there will be photos, I hope
 
-### Lints and fixes files
-```
-npm run lint
-```
+
+
+
+
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
