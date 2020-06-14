@@ -1,12 +1,12 @@
 <template>
   <div class="main-div">
-    <h1>etd.photos</h1>
-    <p>stuff goes here</p>
+    <h1>metaabout</h1>
+    <p>here goes stuff</p>
   </div>
 </template>
 
 <script lang="ts">
 export default {
-  name: 'Home'
+  name: 'Metaabout'
 }
 </script>

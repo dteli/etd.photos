@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
-import Home from '../views/Home.vue'
 
+import Home from '../views/Home.vue'
 import Contact from '@/views/Contact.vue'
+import Construction from '@/views/Construction.vue'
 
 Vue.use(VueRouter)
 
@@ -10,7 +11,12 @@ const routes: Array<RouteConfig> = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    redirect: { name: 'Construction' }
+  },
+  {
+    path: '/construction',
+    name: 'Construction',
+    component: Construction
   },
   {
     path: '/about',
@@ -24,6 +30,11 @@ const routes: Array<RouteConfig> = [
     path: '/contact',
     name: 'Contact',
     component: Contact
+  },
+  {
+    path: '/metaabout',
+    name: 'Metaabout',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Metaabout.vue')
   }
 ]
 

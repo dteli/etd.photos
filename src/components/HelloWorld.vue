@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1 style="margin: 6rem 0 6rem;">please check back soon</h1>
+    <h1>please check back soon</h1>
     <h1>I am learning Vue</h1>
     <h2>along with its friends</h2>
     <h3>plus I'm self-hosting on a VPS</h3>
-    <h3>altogether I guess I'm using/learning</h3>
+    <h1><em>altogether I guess I'm using/learning:</em></h1>
     <ul>
-      <li>Vue stuff
+      <li>front-end / Vue
         <ul>
           <li>Vue proper (the logo is a nice shade of green)</li>
           <li>Vue Router (how are there so many features in this)</li>
@@ -37,6 +37,10 @@ export default class HelloWorld extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+h1 {
+  margin: 4rem 0 1rem;
+}
+
 h2 {
   margin: 2rem;
 }

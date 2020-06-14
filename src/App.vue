@@ -23,7 +23,8 @@ export default {
 </script>
 
 <style lang="scss">
-@use 'css/vars';
+@use 'css/vars' as v;
+@use 'css/exts' as x;
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
@@ -38,9 +39,9 @@ html {
 body {
   margin: 0;
 
-  font-family: vars.$f-body;
+  font-family: v.$f-body;
   h1,h2,h3,h4,h5,h6 {
-    font-family: vars.$f-title;
+    font-family: v.$f-title;
   }
 }
 
@@ -57,19 +58,13 @@ body {
 nav {
   padding: 30px;
   min-height: 40px;
-  margin: 0 0 2rem;
+  margin: 0;
   flex-grow: 0;
-  font-size: 2rem;
+  font-size: 1.6rem;
   background-color: #333;
+  color: v.$c-white;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+  @extend %link-colors;
 }
 
 div#main-spacer {
